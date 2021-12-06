@@ -1,2 +1,2 @@
 See: 
-[cryptalt-crypto-compendium.ipynb](cryptalt-crypto-compendium.ipynb)
+[cryptalt-crypto-compendium.html](cryptalt-crypto-compendium.html)
