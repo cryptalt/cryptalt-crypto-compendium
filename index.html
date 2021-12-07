@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8" />
+<head><style type="text/css">
+        div.output_subarea {
+            max-width: 100% !important;
+        }
+    </style>
+    <meta charset="utf-8" />
 
 <title>cryptalt-crypto-compendium</title>
 
@@ -13079,9 +13084,49 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered celltag_remove_cell">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="nt">table</span> <span class="p">{</span><span class="k">margin-left</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span><span class="n">align</span><span class="p">:</span><span class="kc">left</span><span class="p">;</span><span class="k">text-align</span><span class="p">:</span><span class="kc">left</span><span class="p">}</span>
+<span class="nt">img</span> <span class="p">{</span> <span class="k">padding-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span> <span class="k">padding-right</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
+<div class="output_html rendered_html output_subarea output_execute_result">
+<style>
+table {margin-left: 0 !important;align:left;text-align:left}
+img { padding-left: 20px; padding-right: 20px}
+</style>
+
+</div>
+ 
+         </div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell rendered celltag_hide-input celltag_remove_input celltag_remove_cell">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
@@ -13089,25 +13134,13 @@ div#notebook {
 <span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install matplotlib <span class="p">|</span> grep -v <span class="s1">&#39;already satisfied&#39;</span>
 <span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install ipywidgets <span class="p">|</span> grep -v <span class="s1">&#39;already satisfied&#39;</span>
 
-
-
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">table_css</span> <span class="o">=</span> <span class="s1">&#39;table {margin-left: 0 !important;display:block;text-align:left;align-left} &#39;</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;</span><span class="si">{}</span><span class="s1">&lt;/style&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_css</span><span class="p">))</span>
-
-<span class="c1">##### import sys</span>
-<span class="c1">#!conda install --yes --prefix {sys.prefix} numpy</span>
-<span class="c1">#!conda install --yes --prefix {sys.prefix} matplotlib</span>
-
-
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 
-<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 
 <span class="n">javascript_functions</span> <span class="o">=</span> <span class="p">{</span><span class="kc">False</span><span class="p">:</span> <span class="s2">&quot;hide()&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">:</span> <span class="s2">&quot;show()&quot;</span><span class="p">}</span>
 <span class="n">button_descriptions</span>  <span class="o">=</span> <span class="p">{</span><span class="kc">False</span><span class="p">:</span> <span class="s2">&quot;Show code&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">:</span> <span class="s2">&quot;Hide code&quot;</span><span class="p">}</span>
@@ -13156,39 +13189,39 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
+<div class="output_html rendered_html output_subarea output_execute_result">
 <script>$("div.input").hide()</script>
 </div>
+ 
+         </div>
 
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
 
 
  
  
-<div id="c4035005-5eaf-4af0-9433-7c9b5630c621"></div>
-<div class="output_subarea output_widget_view ">
+<div id="0d81e163-91a4-4a7b-aa33-fc02715b1e99"></div>
+<div class="output_subarea output_widget_view output_execute_result">
 <script type="text/javascript">
-var element = $('#c4035005-5eaf-4af0-9433-7c9b5630c621');
+var element = $('#0d81e163-91a4-4a7b-aa33-fc02715b1e99');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e6578500866c43cc804725035abd7912", "version_major": 2, "version_minor": 0}
+{"model_id": "dc24ef12c92a46f5b3f4bdf60ed2c412", "version_major": 2, "version_minor": 0}
 </script>
 </div>
-
-</div>
+ 
+         </div>
 
 </div>
 </div>
@@ -13205,7 +13238,29 @@ var element = $('#c4035005-5eaf-4af0-9433-7c9b5630c621');
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Disclaimers">Disclaimers<a class="anchor-link" href="#Disclaimers">&#182;</a></h2><p>None of this guide constitutes financial advice, and is only for information and entertainment purposes.
+<hr>
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><p><a href="#Disclaimers">Disclaimers</a></p>
+<p><a href="#Objectives">Objectives</a></p>
+<p><a href="#Virtues">Virtues</a></p>
+<p><a href="#Cognitive-Biases">Cognitive Biases</a></p>
+<p><a href="#Investing-Basics">Investing Basics</a></p>
+<p><a href="#Compound-Interest">Compound Interest</a></p>
+<p><a href="#Buying-and-Selling">Buying and Selling</a></p>
+<p><a href="#Risks">Risks</a></p>
+<p><a href="#Risk-Management">Risk Management</a></p>
+<p><a href="#Portfolio-Allocation">Portfolio Allocation</a></p>
+<p><a href="#Taxes">Taxes</a></p>
+<p><a href="#Defi">Defi</a></p>
+<p><a href="#Recommended-Resources">Recommended Resources</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h1 id="Disclaimers">Disclaimers<a class="anchor-link" href="#Disclaimers">&#182;</a></h1><p>None of this guide constitutes financial advice, and is only for information and entertainment purposes.
 Please consult with the appropriate professionals concerning investment decisions, laws, and taxes.</p>
 <p>This project, including all of the files and their contents, is licensed under the terms of MIT License. See <a href="license.txt">license.txt</a> for details.</p>
 <p>This is a freely given work in progress. Suggestions, feedback, and contributions are welcome provided they are given freely relinquishing all restrictions on use including copyright.</p>
@@ -13220,7 +13275,8 @@ Please consult with the appropriate professionals concerning investment decision
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Objectives">Objectives<a class="anchor-link" href="#Objectives">&#182;</a></h2><p>To explain the principles, mental models, and strategies for successful crypto investing.</p>
+<hr>
+<h1 id="Objectives">Objectives<a class="anchor-link" href="#Objectives">&#182;</a></h1><p>To explain the principles, mental models, and strategies for successful crypto investing.</p>
 <p>To be a starting map of the journey to do your own research (DYOR). To show some of the questions to ask and where to find answers.</p>
 <p>To fully embrace the principles of WAGMI (We're all going to make it), rejecting the zero-sum belief that for one of us to win someone else needs to lose. A rising tide lifts all boats. Even though there are winners and losers for individual trades, over time crypto is creating exponential value by solving real problems and disrupting real industries through greater innovation, efficiency, and security.
 To encourage the spirit of GM (Good morning) — to courageously</p>
@@ -13240,7 +13296,73 @@ To encourage the spirit of GM (Good morning) — to courageously</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Investing-Basics">Investing Basics<a class="anchor-link" href="#Investing-Basics">&#182;</a></h3><h3 id="Interest">Interest<a class="anchor-link" href="#Interest">&#182;</a></h3><table>
+<hr>
+<h1 id="Virtues">Virtues<a class="anchor-link" href="#Virtues">&#182;</a></h1><p><img src="buffet-iq.png" width="33%" height="33%" align="right" /></p>
+<p>Your success depend more on your discipline, and control over your emotions than your intellect.</p>
+<p>Being smart is good. Awareness of yourself, your emotions, and the market is better.</p>
+<h2 id="Patience">Patience<a class="anchor-link" href="#Patience">&#182;</a></h2><blockquote><p>"the wise ones bet heavily when the world offers them that opportunity. They bet big when they have the odds. And the rest of the time, they don’t. It’s just that simple."
+<br>— Charlie Munger</p>
+<p>“The trick in investing is just to sit there and watch pitch after pitch go by and wait for the one right in your sweet spot. And if people are yelling, ‘Swing, you bum!,’ ignore them.”
+<br>— Warren Buffet</p>
+</blockquote>
+<p><br clear="both"></p>
+<h2 id="Focus">Focus<a class="anchor-link" href="#Focus">&#182;</a></h2><p><img src="saying-no.jpeg" width="44%" height="44%" align="right" /></p>
+<blockquote><p>“You don’t have to be an expert on every company, or even many,” he says. “You only have to be able to evaluate companies within your circle of competence. The size of that circle is not very important; knowing its boundaries, however, is vital.”
+<br>— Warren Buffet</p>
+<p>"Use your specialized knowledge to home in on stocks you can analyze, study them and then decide if they’re worth owning. The best way to invest is to look at companies competing in the field where you work. Someone with deep restaurant-industry experience would have predicted the success of Panera Bread Co. and Chipotle Mexican Grill Inc., he says: “If you’re in the steel industry and it ever turns around, you’ll see it before I do."
+<br>— Peter Lynch</p>
+</blockquote>
+<p><br clear="both"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h2 id="Cognitive-Biases">Cognitive Biases<a class="anchor-link" href="#Cognitive-Biases">&#182;</a></h2><h3 id="Incentive-Bias-&#8212;-Conflict-of-interest">Incentive Bias &#8212; Conflict of interest<a class="anchor-link" href="#Incentive-Bias-&#8212;-Conflict-of-interest">&#182;</a></h3><p><img src="bread-song.jpg" width="44%" height="44%" align="right" /></p>
+<p>Be extremely skeptical of any recommendation to buy anything. Many or most of those shilling projects have powerful incentives to lie to you, and themselves about the future of any project. Most projects will not "go to the moon", and will eventually go to $0.</p>
+<blockquote><p>“If you can't understand why someone is doing something, look at the consequences of their actions, whatever they might be, and then infer the motivations from their consequences.”
+<br>—Jordan Peterson</p>
+</blockquote>
+<p>Media and social media are filled with paid promotions, many undisclosed. They are either being paid to lie to you, or being paid to dump their payment in coins on you. If someone is telling you to buy, they probably bought it at a much lower price.</p>
+<blockquote><p>"Consider the presentations of brokers selling commercial real estate and businesses. I’ve never seen one that I thought was even within hailing distance of objective truth. In my long life, I have never seen a management consultant’s report that didn’t end with the same advice: “This problem needs more management consulting services.” Widespread incentive-caused bias requires that one should often distrust, or take with a grain of salt, the advice of one’s professional advisor, even if he is an engineer. 
+<br>The general antidotes here are: 
+<br>(1) especially fear professional advice when it is especially good for the advisor; 
+<br>(2) learn and use the basic elements of your advisor’s trade as you deal with your advisor; and 
+<br>(3) double check, disbelieve, or replace much of what you’re told, to the degree that seems appropriate after objective thought."
+<br><br>—Charlie Munger, The Psychology of Human Misjudgement</p>
+</blockquote>
+<h4 id="Self-deception">Self-deception<a class="anchor-link" href="#Self-deception">&#182;</a></h4><p><img src="fool-yourself.jpg" width="44%" height="44%" align="right" /></p>
+<blockquote><p>Above all, don’t lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love.”
+<br>—Fyodor Dostoevsky, The Brothers Karamazov</p>
+</blockquote>
+<p>If you own anything, you are already subject to incentive bias.
+This can cause you to make the following costly mistakes:</p>
+<ul>
+<li>not taking profit</li>
+<li>adding to your losers</li>
+<li>cutting your winners instead of letting them run</li>
+</ul>
+<p><br clear="both"></p>
+<h4 id="Ownership---the-cure-for-laziness">Ownership - the cure for laziness<a class="anchor-link" href="#Ownership---the-cure-for-laziness">&#182;</a></h4><p><img src="die-think.jpg" width="44%" height="44%" align="right" /></p>
+<blockquote><p>“Taking complete ownership of your outcomes by holding no one but yourself responsible for them is the most powerful thing you can do to drive your success.”
+<br>— Gary W. Keller</p>
+</blockquote>
+<p><br clear="both"></p>
+<h4 id="Resources-on-cognitive-bias">Resources on cognitive bias<a class="anchor-link" href="#Resources-on-cognitive-bias">&#182;</a></h4><h5 id="The-Psychology-of-Human-Misjudgement---Charlie-Munger">The Psychology of Human Misjudgement - Charlie Munger<a class="anchor-link" href="#The-Psychology-of-Human-Misjudgement---Charlie-Munger">&#182;</a></h5><p><a href="https://www.fool.com/investing/general/2013/06/10/charlie-mungers-18-biases-that-cause-you-to-fool-y.aspx">Summary</a></p>
+<p><a href="https://www.youtube.com/watch?v=pqzcCfUglws">Youtube</a></p>
+<p><a href="https://fs.blog/great-talks/psychology-human-misjudgment/">Transcript</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h1 id="Investing-Basics">Investing Basics<a class="anchor-link" href="#Investing-Basics">&#182;</a></h1><h2 id="Interest">Interest<a class="anchor-link" href="#Interest">&#182;</a></h2><table>
 <thead><tr>
 <th style="text-align:left">Terrm</th>
 <th style="text-align:left">Meaning</th>
@@ -13285,8 +13407,8 @@ To encourage the spirit of GM (Good morning) — to courageously</p>
 </tr>
 </tbody>
 </table>
-<h4 id="APR-vs-APY">APR vs APY<a class="anchor-link" href="#APR-vs-APY">&#182;</a></h4><p>The larger the APR, the larger the difference between APR and APY
-When comparing rates, be sure you are comparing APR to APR or APY to APY</p>
+<h2 id="APR-vs-APY">APR vs APY<a class="anchor-link" href="#APR-vs-APY">&#182;</a></h2><p>The larger the APR, the larger the difference between APR and APY
+When comparing rates, be sure you are comparing APR to APR, or APY to APY</p>
 <table>
 <thead><tr>
 <th style="text-align:left">APR</th>
@@ -13313,21 +13435,34 @@ When comparing rates, be sure you are comparing APR to APR or APY to APY</p>
 </tbody>
 </table>
 <p>Site for converting APR &lt;-&gt; APY: <a href="https://www.aprtoapy.com/">https://www.aprtoapy.com/</a></p>
-<h4 id="Compound-Interest">Compound Interest<a class="anchor-link" href="#Compound-Interest">&#182;</a></h4><blockquote><p><em>Compound interest is the most powerful force in the universe.
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h1 id="Compound-Interest">Compound Interest<a class="anchor-link" href="#Compound-Interest">&#182;</a></h1><h2 id="The-formula-for-wealth">The formula for wealth<a class="anchor-link" href="#The-formula-for-wealth">&#182;</a></h2><p><img src="buffet-1000.jpeg" width="40%" height="40%" align="right"/></p>
+<blockquote><p><em>Compound interest is the most powerful force in the universe.
 He who understands it, earns it; he who doesn’t, pays it.</em></p>
 </blockquote>
 <p>Nothing is more important to your financial future than benefitting from compound interest.</p>
-<p>Compound interest is literally the formula for wealth.</p>
-<p>Every \$1 invested has the potential to become \\$100 or more. A penny saved is a dollar earned. Spend less. Invest more.</p>
-<p><img src="buffet-1000.jpeg" width="35%" height="35%" /></p>
-<p>Almost all wealth in the world is the result of compound interest over long periods of time.
-<br>Wealth goes to those who patiently hold appreciating assets for years or decades.</p>
-<p><img src="buffet-wealth.png" width="65%" height="65%" />
-<img src="buffet-wealth-compound.jpg" width="45%" height="45%" /></p>
-<p>The amount of money you start with is important, but the rate of growth is far more important the longer it has time to compound.</p>
-<blockquote><p><em>Time in the market beats timing the market.</em></p>
+<p>Every \$1 invested has the potential to become \\$100 or more. A penny saved is a dollar earned. Spend less. Invest more. You can either compound your wealth or compound your debt.</p>
+<p>Almost all wealth in the world is the result of compound interest over long periods of time. Wealth goes to those who patiently buy the strongest assets at a good price and hold them for years or decades.</p>
+<blockquote><p>It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price.
+<br>— Warren Buffet</p>
 </blockquote>
-<p>As you can see in the table below, you can double your final amount either by doubling your initial principal or doubling the APR.</p>
+<p><br clear="both"><br></p>
+<h2 id="Compounding:-high-APR-for-long-time">Compounding: high APR for long time<a class="anchor-link" href="#Compounding:-high-APR-for-long-time">&#182;</a></h2><p><img src="buffet-wealth.png" width="55%" height="55%" align="right"/></p>
+<p>The amount of money you start with is important, but the sustained rate of growth is far more important the longer it has time to compound.
+<br><br>Be extremely skeptical about claimed APRs. Losing money is negative APR, so you need practice strong risk management about what to buy, when to buy it and when to sell it.</p>
+<blockquote><p>Rule number 1: Never lose money. Rule number 2: Don't forget rule number 1
+<br> — Warrent Buffet</p>
+</blockquote>
+<p><br clear="both"><br>
+<img src="buffet-wealth-compound.jpg" width="55%" height="55%" align="right"></p>
+<h5 id="Time-compounds-exponentially">Time compounds exponentially<a class="anchor-link" href="#Time-compounds-exponentially">&#182;</a></h5><p>As you can see in the table below, you can double your final amount either by doubling your initial principal or doubling the APR.</p>
 <p>Doubling the duration, however can increase your amount by more than 70x, depending on the APR and duration.</p>
 <table>
 <thead><tr>
@@ -13388,28 +13523,26 @@ He who understands it, earns it; he who doesn’t, pays it.</em></p>
 </tr>
 </tbody>
 </table>
-<p>Be very skeptical of any published APRs. See Risk Managment.</p>
-<hr>
-<h3 id="Self-control-and-self-mastery">Self control and self mastery<a class="anchor-link" href="#Self-control-and-self-mastery">&#182;</a></h3><p>Your success depend more on control over your emotions than your intellect.</p>
-<p><img src="buffet-iq.png" width="25%" height="25%" /></p>
-<p>Being smart is good. Awareness of yourself, your emotions, and the market is better.</p>
-<blockquote><p>"the wise ones bet heavily when the world offers them that opportunity. They bet big when they have the odds. And the rest of the time, they don’t. It’s just that simple."
-<br>— Charlie Munger</p>
-<p>“The trick in investing is just to sit there and watch pitch after pitch go by and wait for the one right in your sweet spot. And if people are yelling, ‘Swing, you bum!,’ ignore them.”
-<br>— Warren Buffet</p>
-</blockquote>
-<p>You don't have to invest in everything. Specializing knowledge in 1 or more key areas can give you an edge.</p>
-<blockquote><p>“You don’t have to be an expert on every company, or even many,” he says. “You only have to be able to evaluate companies within your circle of competence. The size of that circle is not very important; knowing its boundaries, however, is vital.”
-<br>— Warren Buffet</p>
-</blockquote>
-<p><img src="saying-no.jpeg" width="55%" height="55%" /></p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell rendered celltag_hide-input celltag_remove_input">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -13457,32 +13590,32 @@ He who understands it, earns it; he who doesn’t, pays it.</em></p>
 <div class="output">
 
 
-<div class="output_area">
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
 
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea output_execute_result">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZcAAAEWCAYAAACqitpwAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8/fFQqAAAACXBIWXMAAAsTAAALEwEAmpwYAAA95klEQVR4nO3deXxU1f34/9c7k0DYw04kIKipAi6gEXBfUARccN9ajcpHbCsuXb4VW1uXWqv259pWK1U/4lLRD2LBCEVErHUBWUQRUAkKJRAWw07IOu/fH+dMGIZJGGCWLO/n43Efc++55977nkky79x77j1HVBVjjDEmntJSHYAxxpjGx5KLMcaYuLPkYowxJu4suRhjjIk7Sy7GGGPizpKLMcaYuLPkYvYgIveISK9UxxEvIvI3EfntAe6jp4hsF5FAHOJ5QUTur2P9/SLyvYisPdBjGZMqllxMTESkmYhMFJEVIqIicnrEehGRh0SkxE8PiYiEre8vIvNFpNS/9o912wOlqj9W1d8f4D7+q6qtVbU6XnFFIyI9gV8AfVW1WyKPtT/8z/+sA9h+lohsEJGtIvK5iIyMWH+1iKwUkR0i8k8R6RC27nER2SQin4hITsQ2T8Z4/Hv87++giPLrRKTa/wOxVUQWish5ft3pIhL067aJyNcicv3+fgZNhSUXU0NEBovIp8CvgAUi8qGItA6r8iHwIyDaf9SjgQuBY4CjgfOBm/x+mwGTgZeB9sB4YLIvr3PbOLynAz7TSLKeQImqrt/XDUUkPQHxxNttQLaqtsX93F8WkWwAEekHPANcA3QFSoGn/LqBwHFAN9zv4Vhf3g74f8Bdezuw/4flWmCjf430iaq2BrKA54DXRaS9X7fGr2sL/Az4u4gcvq9vvklRVZtsQlUBvgZ+CdwHHA6cBbSIUq8IOD2i7GNgdNjyKGC2nx8KrAYkbP1/gWF72zbKsU/3x/818D2wAvhh2PoXgKeBqcAO/x5eAO6P2P4XwHqgGLg+bPsWwCPASmAL7ousBdALUCDd13sf+CPwKbAVlzw7hO3n/3BJeAvwAdAvIsb7o7y3s4CdQBDYDrzgyy8AFgOb/XH7hG2zArgD+AIoD8UXtn63uMNi/x8/fx3wEfAXH+tXwJBaPvuXfGw7fXy/2lt8e/l9GwiUAQP98gPAP8LWHwpUAG2AK4A/+vJhwFQ//xfg6hiPd6qP/YdACdAsbN11wIdhy63855YX+p2J2Nd64LJU/83W58nOXEy4rsAnuC+QclV9V1V3xrhtP+DzsOXPfVlo3Rfq/yq9LyLW17ZtNN2ATkB3IB8YF/Ff5NXAH3BfSh/Wsn07v/0o4K9h/6H+f7j/kE8EOuDO4oK1xHEtcAOQDVQB4ZdmpgG5QBdgAfBKHe8HAFV9FxiO/y9ZVa8TkR8ArwK3A51xSfOtsLM+gKuAc4EsVa3a23GiGAQsx32mdwOTwi9HhcV3De6fgvN9fA/HGN9uRKRARMqAObhkNM+v2u33QFWX45LLD3DJ6xQRaQEMARaLSB5wuKr+I8b3mQ+8Bbzul8+vJb504H9wCXRZxLo0EbkA91kVxnjcJsmSiwn3J+CfwOXAZSLSdR+2bY37zzdkC9DaX4qIXBda3yaGbWvzW1UtV9V/A2/7mEMmq+pHqhpU1bIo21YC96lqpapOxX2JHC4iabhkcZuqrlbValX9WFXLa4nhJVX9UlV3AL8FLg9dhlPV51V1m9/2HuAYfwlnX10BvK2qM1S1Epf8WuCSX8iTqrpqH/4RiLQeeNx/Hq/hzmDPjWN8u1HV83A/+xHAO6oaSt61/p6o6pfAG8Bs3KXDh3HJ/FYRuVVEPhCRV0QkK9oxRaQlcBnuzKgSmMiel8YGi8hm3BnnVcBFqhqK5yC/bifwJvBzVf2s9o/FWHIxNVT1D7gvhaXAOcDXInJ8jJtvx12PDmkLbPdnK5HrQuu3xbBtNJv8F3rISuCgsOVVe4m1JOI//FLcF1snIBP3X3wswo+zEsgAOolIQEQeFJHlIrIVd+kKv/99dZDfNwD+i3gV7qwrWhz7Y3XEZx35eR5ofHvwiWwaMNSfCcBefk9U9TFVPUZVr8D9M/EB7jtsNO5sZim+LSaKi3Bnl1P98ivAcBHpHFZntqpmqWonVR3szyRD1qhqlo/nSeDMut6fseRiIqjqMmAR7rLAa7hLCbFYjGuQDznGl4XWHR1xJnJ0xPrato2mvYi0ClvuCawJfxsxxhzpe1wbwKEx1u8REUOl38fVwEhcG0o7XLsHwP7cAbcGODi04D/DHrg2rJC63m8oCbcMK4u8C617xM8m8vMMF3msWOKrSzq7Pu/dfg9E5BCgOfBN+Ab+jHo0rm3wSNwl10pgLu73Kpp83D8Q/xV3i/f/4f4ZuDrGOAHwZ6J3AEeJyIX7sm1TY8nF1BCRG0WkuV/MBA4D1oWtby4imX6xmYhkhn0pvQj8XES6i8hBuAbzF/y694Fq3CWM5iIyxpe/F8O2tblX3O3RpwDn4b4sDoj/r/t54FEROcifgZwQ9plE+pGI9PWXXO4DJqq7VbkNrnG9BPel/sABhPU6cK6IDBGRDNxnU467CSKW97QB90X/I/9+bmDP5NkF97PJEJHLgD7s+g8/0jrgkP2JT0SOEJHhItLCH+tHuEb2f/sqrwDni8gp/p+H+4BJqrotYlePAveoainwHXC8v6vxdODbKMftjjuzOQ/o76djgIeIftdYnVS1AnfTx+/2ddumxJKLCXci7nr7bcB/gE3A42Hrv8Zdc+4OTPfzof9an8E1li4CvsS1gzwDNX+MF+L+kDfj2jUu9OV1bluLtT62NbgvpB+r6lf784aj+KWPYy7ultWHqP3v5CVcElyLS8a3+vIXcZeKVgNLcO0E+0VVv8bd/v1n3FnR+bgG9Yo6N9zdjbjbdUtwjeaRX/xzcDcffI+7EeJSVS2pZV9/BO4Skc0i8st9jE9w7U/rgQ2437MrVHWBf6+LgR/jfqbrcUn6p7vtQORM3I0Lb/ptPsX9vqwCzgAejHLca4CFqvqOqq4NTbjLW0eLyJG1vNe6PA/0FJGoNwUYf2uoMeFE5B7cbbArUhzKHsQ9vPmyqubspWqi43jfx/FsKuM4UCJyHe625JNTHYtpXOzMxRhjTNw1hCd6TZKp6j2pjsEY07DZZTFjjDFxZ5fFjDHGxJ1dFvM6deqkvXr1SnUYxhjToMyfP/97Ve0cWW7JxevVqxfz5s3be0VjjDE1RGRltHK7LGaMMSbuLLkYY4yJO0suxhhj4s7aXOpQWVlJUVERZWXRem1vHDIzM8nJySEjIyPVoRhjGhFLLnUoKiqiTZs29OrVi7qHFmmYVJWSkhKKioro3bt3qsMxxjQidlmsDmVlZXTs2LFRJhYAEaFjx46N+szMGJMaCU8uvpvvz0SkwC/3FpE5IlIoIq+FhkP1XbG/5svniEivsH3c6cu/FpFzwsqH+bJCERkbVh71GPsZ//5u2iA09vdnjEmNZJy53IYbIS7kIeAxVT0M1236KF8+CjfC4GHAY74eItIXuBLXVfgw4CmfsALAX3FjjvcFrvJ16zqGMcYYb+tW+MUvYNmy+O87oclFRHJwY3E/65cFNzzoRF9lPG6cD3Aj94338xOBIb7+SGCCHy/9O6AQGOinQlX91o8dMQEYuZdjNDg33HADXbp04cgjdw05sXHjRs4++2xyc3M5++yz2bRpEwBvvPEG/fr145RTTqGkxA3HsXz5cq644oqUxG6Mqd/eeQcefRTWro3/vhN95vI48Csg6Jc7ApvDxi8vYtdY293xY4H79Vt8/ZryiG1qK6/rGLsRkdEiMk9E5m3YsGE/32JiXXfddfzrX//arezBBx9kyJAhLFu2jCFDhvDgg258pD//+c/MnTuXm266iX/84x8A3HXXXdx///1Jj9sYU/8VFED79nDCCfHfd8KSi4icB6xX1fmJOsaBUtVxqpqnqnmdO+/RNU69cOqpp9KhQ4fdyiZPnkx+vhvaPj8/n3/+858ApKWlUV5eTmlpKRkZGfznP/+hW7du5ObmJjtsY0w9FwzC1KkwfDikJ+C+4UTeinwScIGIjMANAdsWeALIEpF0f2aRgxsKFv/aAygSkXSgHW5Y1lB5SPg20cpL6jjG/rv9dli48IB3s5v+/eHxx/d5s3Xr1pGdnQ1At27dWLfODXN/5513ctZZZ3HQQQfx8ssvc9lllzFhwoQ4BmyMaSzmzoUNG+C88xKz/4Sduajqnaqao6q9cA3y76nqD4FZwKW+Wj4w2c9P8cv49e+pG2xmCnClv5usN26s709xY5zn+jvDmvljTPHb1HaMRkdEau74Ovvss5k/fz5vvfUWkydPZsSIEXzzzTdceuml3HjjjZSWlqY4WmNMfVFQAIEAnHPO3uvuj1Q8RHkHMEFE7gc+A57z5c8BL4lIIbARlyxQ1cUi8jqwBKgCblbVagARGQNMBwLA86q6eC/H2H/7cYaRKF27dqW4uJjs7GyKi4vp0qXLbutLS0t54YUXmD59Oueddx6TJk1i4sSJvPLKK9x4440pitoYU58UFMBJJ0HEVfe4SUpyUdX3gff9/Le4O70i65QBl9Wy/R+AP0QpnwpMjVIe9RiNxQUXXMD48eMZO3Ys48ePZ+TIkbut/9Of/sStt95KRkYGO3fuRERIS0uzMxdjDABFRe4q/8MPJ+4Y1v1LPXfVVVfx/vvv8/3335OTk8O9997L2LFjufzyy3nuuec4+OCDef3112vqr1mzhk8//ZS7774bgFtuuYXjjz+erKysmoZ/Y0zT9vbb7vXccxN3DHFNFCYvL08jBwtbunQpffr0SVFEydNU3qcxxjn/fFi8GJYvhwPtpENE5qtqXmS59S1mjDFNSGkpvPuuu0sskb0/WXIxxpgmZNYsKCtL3C3IIZZcjDGmCXn7bWjVCk47LbHHseRijDFNhKq7BXnoUGjePLHHsuRijDFNxKJFsGpV4i+JgSUXY4xpMgoK3OuIEYk/liWXem7VqlWcccYZ9O3bl379+vHEE08A1u2+MWbfFRTA8cdDt26JP5Yll3ouPT2dRx55hCVLljB79mz++te/smTJEut23xizTzZsgNmzE/vgZDhLLvVcdnY2xx57LABt2rShT58+rF692rrdN8bsk2nTXIN+MtpbwLp/idnt/7qdhWsXxnWf/bv15/Fhj8dcf8WKFXz22WcMGjTIut03xuyTggLIzoYBA5JzPDtzaSC2b9/OJZdcwuOPP07btm13W2fd7htj6lJZCdOnu0tiaUn61rczlxjtyxlGvFVWVnLJJZfwwx/+kIsvvhiwbveNMbH78EPYujV5l8TAzlzqPVVl1KhR9OnTh5///Oc15aFu9wHrdt8YU6eCAvfQ5JAhyTumnbnUcx999BEvvfQSRx11FP379wfggQcesG73jTExKyiAM86A1q2Td8yEdbkvIpnAB0BzXBKbqKp3i8gLwGnAFl/1OlVdKK7R4AlgBFDqyxf4feUDd/n696vqeF9+HPAC0AI3aNhtqqoi0gF4DegFrAAuV9VNdcVrXe43/vdpTFP0zTdw+OHwl7/AzTfHf/+p6HK/HDhTVY8B+gPDRGSwX/f/VLW/nxb6suFArp9GA0/7wDsAdwODcKNL3i0i7f02TwM3hm03zJePBWaqai4w0y8bY0yTk4yBwaJJWHJRZ7tfzPBTXadJI4EX/XazgSwRyQbOAWao6kZ/9jEDl6iygbaqOlvd6deLwIVh+xrv58eHlRtjTJNSUAD9+kGvXsk9bkIb9EUkICILgfW4BDHHr/qDiHwhIo+JSKhvzu7AqrDNi3xZXeVFUcoBuqpqsZ9fC3StJb7RIjJPROZt2LBhv96jMcbUV1u2wAcfJPcusZCEJhdVrVbV/kAOMFBEjgTuBI4Ajgc6AHckOAalljMmVR2nqnmqmte5c+dEhmGMMUn3zjtQVdUIk0uIqm4GZgHDVLXYX/oqB/4X144CsBroEbZZji+rqzwnSjnAOn/ZDP+6Pq5vyBhjGoC334YOHWDw4L3XjbeEJRcR6SwiWX6+BXA28FXYl77g2kK+9JtMAa4VZzCwxV/amg4MFZH2viF/KDDdr9sqIoP9vq4FJoftK9/P54eVG2NMk1BdDVOnwvDhkJ6Ch04SeeaSDcwSkS+Aubg2lwLgFRFZBCwCOgGh7nqnAt8ChcDfgZ8CqOpG4Pd+H3OB+3wZvs6zfpvlwDRf/iBwtogsA87yyw1SWVkZAwcO5JhjjqFfv341z6589913DBo0iMMOO4wrrriCiooKwPWKfOSRRzJixIiasg8//JCf/exnKXsPxpjkmzvX9YSciktigHsC3CbluOOO00hLlizZoyzZgsGgbtu2TVVVKyoqdODAgfrJJ5/oZZddpq+++qqqqt5000361FNPqarqoEGDtLq6Wn//+9/rlClTNBgM6tChQ7WkpKTWY9SH92mMia/f/EY1EFDduDGxxwHmaZTvVOv+pZ4TEVr7x2orKyuprKxERHjvvfe49NJLgd273FdVKisra7rcf/nllxk+fDgdOnRI1VswxqRAQQGcfDK0b7/3uolg3b/E6PbbYeHC+O6zf394/PG916uurua4446jsLCQm2++mUMPPZSsrCzS/YXUnJwcVq929zKMGTOGwYMH069fP0466SRGjhzJ9OnT4xu4MaZeW7UKPv8c/vSn1MVgZy4NQCAQYOHChRQVFfHpp5/y1Vdf1Vr3mmuu4bPPPuPll1/mscce49Zbb2XatGlceuml/OxnPyMYDCYxcmNMKqTqqfxwduYSo1jOMBItKyuLM844g08++YTNmzdTVVVFeno6RUVFdO/efbe6oc4rf/e733Haaafx3nvvcf/99zNz5kzOPvvsFL0DY0wyFBTAIYfAEUekLgY7c6nnNmzYwObNmwHYuXMnM2bMoE+fPpxxxhlMnDgRiN7l/m9/+1vuu+++mu2sy31jmobSUpg5090l5scQTAk7c6nniouLyc/Pp7q6mmAwyOWXX855551H3759ufLKK7nrrrsYMGAAo0aNqtnms88+A+DYY48F4Oqrr+aoo46iR48e/OpXv0rJ+zDGJMesWVBWlsJbkL2Edbnf0FiX+43/fRrTFPzkJ/Dyy/D9926AsERLRZf7xhhjkkjVtbcMHZqcxFIXSy7GGNNIfPEFFBWl/pIYWHLZq8Z+2bCxvz9jmpKCAvc6YkRq4wBLLnXKzMykpKSk0X4BqyolJSVkZmamOhRjTBwUFMDAgdA16ghWyWV3i9UhJyeHoqIiGvNAYpmZmeTk5Oy9ojGmXlu/HubMgXvvTXUkjiWXOmRkZNC7d+9Uh2GMMXs1bZpr0E/lU/nh7LKYMcY0Am+/DQcdBAMGpDoSx5KLMcY0cBUVMH26O2tJ5VP54Sy5GGNMA/fhh7B1a/24BTkkkcMcZ4rIpyLyuYgsFpF7fXlvEZkjIoUi8pqINPPlzf1yoV/fK2xfd/ryr0XknLDyYb6sUETGhpVHPYYxxjRGBQXuockhQ1IdyS6JPHMpB85U1WOA/sAwERkMPAQ8pqqHAZuAUKdYo4BNvvwxXw8R6QtcCfQDhgFPiUhARALAX4HhQF/gKl+XOo5hjDGNTkEBnHkmtGqV6kh2SVhy8SNgbveLGX5S4Exgoi8fD1zo50f6Zfz6ISIivnyCqpar6ndAITDQT4Wq+q2qVgATgJF+m9qOYYwxjco338CyZfXrkhgkuM3Fn2EsBNYDM4DlwGZVrfJVioDQQCTdgVUAfv0WoGN4ecQ2tZV3rOMYkfGNFpF5IjKvMT/LYoxpvCZNcq/15RbkkIQmF1WtVtX+QA7uTCOFQ9fsSVXHqWqequZ17tw51eEYY8w+CQbh2Wfh1FPh4INTHc3uknK3mKpuBmYBJwBZIhJ6eDMHWO3nVwM9APz6dkBJeHnENrWVl9RxDGOMaTRmzYLly2H06FRHsqdE3i3WWUSy/HwL4GxgKS7JXOqr5QOT/fwUv4xf/566Tr2mAFf6u8l6A7nAp8BcINffGdYM1+g/xW9T2zGMMabRGDcOOnSASy5JdSR7SmT3L9nAeH9XVxrwuqoWiMgSYIKI3A98Bjzn6z8HvCQihcBGXLJAVReLyOvAEqAKuFlVqwFEZAwwHQgAz6vqYr+vO2o5hjHGNArr18Obb8KYMVAf+561kSi9aCNRGmNMffXww3DHHbBkCaRyIFkbidIYYxqJYNBdEjv11NQmlrpYcjHGmAamPjfkh1hyMcaYBuaZZ+pvQ36IJRdjjGlA1q1zDfn5+fWzIT/EkosxxjQg48dDVRXceGOqI6mbJRdjjGkgGkJDfoglF2OMaSAaQkN+iCUXY4xpIBpCQ36IJRdjjGkAGkpDfoglF2OMaQBeeKFhNOSHWHIxxph6LhiEv/+9YTTkh1hyMcaYeq4hNeSHWHIxxph6riE15IdYcjHGmHqsoTXkh1hyMcaYeqyhNeSHJHIkyh4iMktElojIYhG5zZffIyKrRWShn0aEbXOniBSKyNcick5Y+TBfVigiY8PKe4vIHF/+mh+REj9q5Wu+fI6I9ErU+zTGmERpiA35IYk8c6kCfqGqfYHBwM0i0teve0xV+/tpKoBfdyXQDxgGPCUiAT+S5V+B4UBf4Kqw/Tzk93UYsAkY5ctHAZt8+WO+njHGNCgNsSE/JGHJRVWLVXWBn98GLAW617HJSGCCqpar6ndAITDQT4Wq+q2qVgATgJEiIsCZwES//XjgwrB9jffzE4Ehvr4xxjQYDbEhPyQpbS7+stQAYI4vGiMiX4jI8yLS3pd1B1aFbVbky2or7whsVtWqiPLd9uXXb/H1I+MaLSLzRGTehg0bDuxNGmNMHDXUhvyQhCcXEWkNvAHcrqpbgaeBQ4H+QDHwSKJjqI2qjlPVPFXN69y5c6rCMMaYPTTUhvyQhCYXEcnAJZZXVHUSgKquU9VqVQ0Cf8dd9gJYDfQI2zzHl9VWXgJkiUh6RPlu+/Lr2/n6xhhT7zXkhvyQRN4tJsBzwFJVfTSsPDus2kXAl35+CnClv9OrN5ALfArMBXL9nWHNcI3+U1RVgVnApX77fGBy2L7y/fylwHu+vjHG1HvvvddwG/JD0vdeZb+dBFwDLBKRhb7s17i7vfoDCqwAbgJQ1cUi8jqwBHen2c2qWg0gImOA6UAAeF5VF/v93QFMEJH7gc9wyQz/+pKIFAIbcQnJGGMahHHjGm5DfojYP/ROXl6ezps3L9VhGGOauHXrICcHbrkFHn107/VTTUTmq2peZLk9oW+MMfVIQ2/ID4kpufg2kL2WGWOM2X+NoSE/JNYzlzeilE2MUmaMMWY/NYaG/JA6G/RF5AhcdyztROTisFVtgQb4WI8xxtRfjaEhP2Rvd4sdDpwHZAHnh5VvAxr4FUFjjKk/Qk/k33JLw3wiP1KdyUVVJwOTReQEVf0kSTEZY0yT01ga8kNifc6lUER+DfQK30ZVb0hEUMYY05Q0pob8kFiTy2TgP8C7QHXiwjHGmKYn1JB/772pjiR+Yk0uLVX1joRGYowxTdQTTzSehvyQWG9FLggfMdIYY0x8fPghFBTAL3/ZOBryQ2JNLrfhEsxOEdkqIttEZGsiAzPGmMZOFe64A7Kz4bbbUh1NfMV0WUxV2yQ6EGOMaWomT4aPP3bPt7Rsmepo4ium5CIip0YrV9UP4huOMcY0DVVVcOedcPjhcP31qY4m/mJt0P9/YfOZuAG+5uPGsDfGGLOPXngBvvoKJk2C9EQOfpIisV4WC386HxHpATyeiICMMaaxKy2Fu++GE06ACy9MdTSJsb/5sghoJI/6GGNMcj3xBKxZAxMmgEiqo0mMWLvc/7OIPOmnv+AeqFywl216iMgsEVkiIotF5DZf3kFEZojIMv/a3peL33+hiHwhIseG7Svf118mIvlh5ceJyCK/zZN+aOVaj2GMMalWUgIPPgjnnw+nnJLqaBIn1luR5+HaWOYDnwB3qOqP9rJNFfALVe0LDAZuFpG+wFhgpqrmAjP9MsBwINdPo4GnwSUK4G5gEK6t5+6wZPE0rgPN0HbDfHltxzDGmJR64AHYvt29NmYxJRdVHQ+8iksunwOfxrBNsaou8PPbgKVAd2AkMN5XGw9c6OdHAi+qMxvIEpFs4BxghqpuVNVNwAxgmF/XVlVnqxur+cWIfUU7hjHGpMzKlfCXv0B+Phx5ZKqjSaxYb0U+HfclvQIQoIeI5Md6K7KI9AIGAHOArqpa7FetBbr6+e7AqrDNinxZXeVFUcqp4xiRcY3GnSXRs2fPWN6KMcbst9/9DtLSGlcfYrWJ9bLYI8BQVT1NVU/FnU08FsuGItIaN5Ll7aq621P9/oxD9yHefVbXMVR1nKrmqWpe586dExmGMaaJ+/xzeOkluPVW6NEj1dEkXqzJJUNVvw4tqOo3QMbeNhKRDFxieUVVJ/nidf6SFv51vS9fDYR/5Dm+rK7ynCjldR3DGGNS4s47oV07GNtEWoBjbtAXkWdF5HQ//R3XyF8rf+fWc8BSVX00bNUUIHTHVz6uO/9Q+bX+rrHBwBZ/aWs6MFRE2vuG/KHAdL9uq4gM9se6NmJf0Y5hjDFJN2sWTJsGv/41tG8i966Ku2q0l0oizYGbgZN90X+Ap1S1vI5tTvb1FgFBX/xrXLvL60BPYCVwuapu9AniL7g7vkqB61V1nt/XDX5bgD+o6v/68jzgBaAFMA24RVVVRDpGO0Zd7zEvL0/nzaszXxpjzD5ThUGDoLgYvvkGWrRIdUTxJSLzVTVvj/JYkktTYMnFGJMIEyfCZZfB//4vXHddqqOJv9qSS6wPUZ4nIp+JyEbrct8YY2JTWekuhfXrB9dck+pokivW7l8eBy4GFqmd6hhjTEyefRaWLYO33oJAINXRJFesDfqrgC8tsRhjTGy2b3fPs5xyCpx7bqqjSb5Yz1x+BUwVkX8DNY34EXeBGWOM8R57DNatgzffbLydU9Yl1uTyB2A7biyXZokLxxhjGr716+Hhh+Hii123+k1RrMnlIFVt5D3hGGNMfNx/P+zc2fg7p6xLrG0uU0VkaEIjMcaYRmD5cvjb32DUKDeEcVMVa3L5CfAvEdlptyIbY0ztfvtbN2zx3XenOpLUinWY4zZ+XJVcXLuLMcaYCAsWwKuvumdbDjoo1dGkVqxd7v8PcBuuc8iFuMG/PgaGJCwyY4xpYO64Azp2hF/9KtWRpF6sl8VuA44HVqrqGbixWbYkLCpjjGlgZsyAd9+Fu+5yvR83dbEmlzJVLQPXiaWqfgU04aYqY4zZpbwcfvlLOPhg+MlPUh1N/RDrrchFIpIF/BOYISKbcL0NG2NMk3fnnfDFFzB5MjRvnupo6odYG/Qv8rP3iMgsoB3wr4RFZYwxDcTUqe5p/DFj4IILUh1N/RHrmUsNVf13IgIxxpiGprgY8vPh6KPhT39KdTT1S6xtLvtMRJ4XkfUi8mVY2T0islpEFvppRNi6O0WkUES+FpFzwsqH+bJCERkbVt5bROb48tdEpJkvb+6XC/36Xol6j8aYpisYdN3o79gBEyZApj2ksZuEJRfcCJHDopQ/pqr9/TQVQET6AlcC/fw2T4lIQEQCwF+B4UBf4CpfF+Ahv6/DgE3AKF8+Ctjkyx/z9YwxJq4efhhmzoQnn4Q+fVIdTf2TsOSiqh8AdQ4tHGYkMEFVy1X1O6AQGOinQlX9VlUrgAnASD8k8pnARL/9eODCsH2N9/MTgSG+vjHGxMXs2e6W48svd928mD0l8sylNmNE5At/2ay9L+uOGzMmpMiX1VbeEdisqlUR5bvty6/f4usbY8wB27wZrroKevSAZ55pmt3pxyLZyeVp4FCgP1AMPJLk4+9GREaLyDwRmbdhw4ZUhmKMaQBU4cc/hlWr4B//gKysVEdUfyU1uajqOlWtVtUg8HfcZS+A1UCPsKo5vqy28hIgS0TSI8p325df387XjxbPOFXNU9W8zp07H+jbM8Y0cs8/D6+9Br//fdMdpyVWSU0uIpIdtngRELqTbApwpb/Tqzeug8xPgblArr8zrBmu0X+KH255FnCp3z4fmBy2r3w/fynwng3PbIw5UEuXwq23wplnWt9hsdjn51xiJSKvAqcDnUSkCLgbOF1E+gMKrABuAlDVxSLyOrAEqAJuVtVqv58xwHQgADyvqov9Ie4AJojI/cBnwHO+/DngJREpxN1QcGWi3qMxpmkoK4Mrr4SWLeGllyAQSHVE9Z/YP/VOXl6ezps3L9VhGGPqoVtvhT//GQoK4NxzUx1N/SIi81U1L7I8FXeLGWNMgzFliksst99uiWVfWHIxxpharF4N118PAwbAgw+mOpqGxZKLMcZEUV0NP/yh605/wgTr7XhfJaxB3xhjGrIHHoB//xteeAF+8INUR9Pw2JmLMcZE+OgjuOceuPpquPbaVEfTMFlyMcaYMJs2uaTSqxc8/bR177K/7LKYMcZ4qnDjjbBmjTt7ads21RE1XJZcjDHGGzcO3njDdac/cODe65va2WUxY4zBNd7ffjsMHQq/+EWqo2n4LLkYY5q8//zHPSB5yCHw8suQZt+MB8w+QmNMk/bxxzBiBOTkuJElrYP0+LDkYoxpsubMgWHDIDsb3nsPunVLdUSNhyUXY0yTNHeua1/p0gVmzYKDDkp1RI2LJRdjTJOzYIFLLB06uDOW7t33vo3ZN5ZcjDFNyuefw9lnu2dYZs2Cnj1THVHjZMnFGNNkLFoEQ4a4Qb9mzXJP4ZvESFhyEZHnRWS9iHwZVtZBRGaIyDL/2t6Xi4g8KSKFIvKFiBwbtk2+r79MRPLDyo8TkUV+mydFXCcNtR3DGNO0LVniEkvz5i6xHHJIqiNq3BJ55vICMCyibCwwU1VzgZl+GWA4kOun0cDT4BIFbnjkQcBA4O6wZPE0cGPYdsP2cgxjTBP11Vdw5plueOJZs+Cww1IdUeOXsOSiqh/gxrAPNxIY7+fHAxeGlb+ozmwgS0SygXOAGaq6UVU3ATOAYX5dW1WdrW6c5hcj9hXtGMaYJuibb1xiUXWJxbrPT45kt7l0VdViP78W6OrnuwOrwuoV+bK6youilNd1jD2IyGgRmSci8zZs2LAfb8cYU58tX+4SS2WluyvsiCNSHVHTkbIGfX/Goak8hqqOU9U8Vc3rbI/lGtOofPcdnHEGlJW5J+/79Ut1RE1LspPLOn9JC/+63pevBnqE1cvxZXWV50Qpr+sYxpgmYuVKl1i2b4d334Wjj051RE1PspPLFCB0x1c+MDms/Fp/19hgYIu/tDUdGCoi7X1D/lBgul+3VUQG+7vEro3YV7RjGGOagFWrXGLZssUllv79Ux1R05Sw8VxE5FXgdKCTiBTh7vp6EHhdREYBK4HLffWpwAigECgFrgdQ1Y0i8ntgrq93n6qGbhL4Ke6OtBbAND9RxzGMMY3ct9+6J+9LSlxiOfbYvW9jEkNcs4TJy8vTefPmpToMY8x+mjQJbrjBDUs8bRoMHpzqiJoGEZmvqnmR5faEvjGmQauogNtug0sucbcZL1hgiaU+sORijGmwVqyAk0+GJ590CebDD6F371RHZSCBbS7GGJNIkyfDdde5hyPfeAMuvjjVEZlwduZijGlQKivdGPcXXgiHHuoug1liqX/szMUY02D8979wxRUwezbcfDM88ojriNLUP5ZcjDENwttvw7XXujOX116Dy+0hg3rNLosZY+q1ykq44w447zw3sNf8+ZZYGgI7czHG1FtFRXDllfDRR/DjH8Njj0FmZqqjMrGw5GKMqZemTYNrroHycvjHP+Cqq1IdkdkXdlnMGFOvVFXBr38NI0ZA9+4wb54llobIkosxpt6YMQOOOw7++Ee48UZ3V9jhh6c6KrM/LLkYY1Ju8WIYPtx1Orltm3soctw4aNEi1ZGZ/WXJxRiTMuvWwU03ufFWZs92z60sXWoPRTYG1qBvjEm60lJ49FF46CE3UuQtt8BvfwsdO6Y6MhMvllyMMUkTDMLLL8NvfuNuM77oIpdgcnNTHZmJN7ssZoxJivffh+OPh/x86NYN/v1vNwaLJZbUCWqQj1d9TFlVWdz3nZLkIiIrRGSRiCwUkXm+rIOIzBCRZf61vS8XEXlSRApF5AsROTZsP/m+/jIRyQ8rP87vv9BvK8l/l8YYgK+/hgsucEMPb9jgzlzmzIFTT011ZE1TZXUlM5bP4Kdv/5Tuj3bnpOdPYsbyGXE/Tiovi52hqt+HLY8FZqrqgyIy1i/fAQwHcv00CHgaGCQiHXBDJ+cBCswXkSmqusnXuRGYgxtCeRi7hkE2xiTBhg1w773wt79By5bwwANw++12B1gq7KzcyTvL32HSV5N46+u32FS2iZYZLRmRO4KLj7iY03qdFvdj1qc2l5HA6X5+PPA+LrmMBF5UNx7zbBHJEpFsX3eGqm4EEJEZwDAReR9oq6qzffmLwIVYcjEmKdaudbcRP/II7NgBo0fDPfdAly6pjqxp2Vq+lbe/eZtJX01i6rKplFaWkpWZxQWHX8DFR1zM0EOH0iIjcZk+VclFgXdERIFnVHUc0FVVi/36tUBXP98dWBW2bZEvq6u8KEr5HkRkNDAaoGfPngfyfoxp0lThgw/g6afdMypVVa6jyYcegr59Ux1d07FhxwYmfz2ZN796k3e/fZeK6gq6te5G/jH5XHTERZze63QyAhlJiSVVyeVkVV0tIl2AGSLyVfhKVVWfeBLKJ7VxAHl5eQk/njGNzdat8NJL8NRTsGQJtG8Pt97qOpm0hvrEU1UKNxYyrXAak5ZO4j///Q9BDdI7qze3DLyFi/tczOCcwaRJ8pvXU5JcVHW1f10vIm8CA4F1IpKtqsX+std6X3010CNs8xxftppdl9FC5e/78pwo9Y0xcfLFF+4s5aWX3KWvvDx4/nk3kFfLlqmOrnFbs20N7333HjO/m8nMb2eyaqu7gHNklyP5zSm/4eI+F3NM12NI9X1MSU8uItIKSFPVbX5+KHAfMAXIBx70r5P9JlOAMSIyAdegv8UnoOnAA6G7yvx+7lTVjSKyVUQG4xr0rwX+nKz3Z0xjVV7uLnk99ZTrAj8z03Uo+ZOfuFuMTWJsLtvM+yveZ+a3M5n53UyWfr8UgA4tOnBGrzO48+Q7OfvQszmsw2EpjnR3qThz6Qq86bNqOvAPVf2XiMwFXheRUcBKIDQc0FRgBFAIlALXA/gk8ntgrq93X6hxH/gp8ALQAteQb435xuynlSvhmWfg2WfdHWCHHeYa66+7Djp0SHV0jc/Oyp18tOqjmmQyv3g+QQ3SMqMlp/Q8hev7X8+QQ4bQv1v/lFzuipW4m7BMXl6ezps3L9VhGFMvlJXBu++6u74KCkAEzj8ffvpTOOssSKu/32kNTmllKfPXzOeDlR8w87uZfLzqY8qry0lPS2dQ90EM6T2EIYcMYXDOYJoFmqU63D2IyHxVzYssr0+3IhtjUuj772HqVJgyBf71L9eW0rWr66rlxhvdEMPmwAQ1yNINS5mzeg6frv6UOavnsGjdIqq1GoBjuh7DzcffzJBDhnBKz1No07xNiiPef5ZcjGnCCgth8mSXUD780PX9lZ0NP/oRjBwJQ4ZAs/r3z3KDsXb7WuYUzWHOajfNXT2XbRXbAGjXvB3Hdz+esSePZVD3QQzOGUznVp1THHH8WHIxpgkJBl3XK1OmuKSy1LUNc/TRbvTHkSPh2GPtstf+2FGxgwXFC2oSyZyiOTV3cqWnpXN016P50dE/YlD3QQzKGcQPOv6gXreZHChLLsY0cqWlrv1kyhR46y1Yvx7S0+G009zzKOefD717pzrKhqMqWEXhxkIWrVvEovV+WreIbzd9i+LasHtl9eLEHifWJJIB3QYk9Gn4+siSizGNTFkZLFgAH3/snpp/913YuRPatnWjPY4cCcOGuQceTe1UleLtxXskkSUbllBeXQ5AmqSR2yGXAdkDuPaYaxnQbQCDcgbRpZX1dWPJxZgGbu1a+OQT9+zJxx/D/PlQUeHWHXoojBrlEsqpp1r7STRBDbJ662qWbVzGspJlfLn+y5pksnHnxpp62a2zOarrUYzpPYajuhzFUV2Pok+nPk3ujCRWllyMaUCqq+HLL10SCU3ffuvWNW/unpS/7TY48UQ44QR3t5dxCaR4W3FNAlm20U2FGwsp3Fi423gmbZq14cguR3Jpn0s5ssuRHNX1KI7qchQdW9owmfvCkosx9ZSqG2P+8893JZLZs2H7dre+Wzc46SS4+WaXTAYMcAmmqaqsrmTNtjWs2LyCwo2FNQlkWYlLIjurdtbUbRZoxqHtDyW3Yy7nHHoOh3U4jNwOueR2zKVH2x4p7zqlMbDkYkw9sGEDLF68a/ryS/e60V+VSUtzd3Rde61LJCeeCL16uYcbmwJVZUv5Fv675b8108rNK/nv1l3La7atIajBmm0y0jI4pP0h5HbM5axDziK3Q65LIj6BBNICKXxHjZ8lF2OSqKRk9yQSmjZs2FWnXTvo1w8uucS9HnWU67urTcN9nq5OQQ1SUlpC8fZi1m5fS/G2YtZsW+MSyJaVNckj9HxISLNAM3q07UHPdj0Z0nsIPdv1rJkO63AYPdv1JD3NvuJSxT55Y+JI1d3qu2LF7tOyZe5sZN26XXXbtHHJ44IL3GtoOuigxnFGUl5Vzrod6yjeVrxb4qiZ315M8bZi1u1YR1Wwao/tO7XsRM92PcntmLtH8ujZriddW3dt1M+JNHSWXIzZB6F2kPDEsXLl7stlZbtv07EjHHKIuw04PIn06NFwkoiqsrlsM9+Xfr/btKF0Q61lm8s277EfQejcqjPZrbPp1robR3Y5smY+u3U22W12zbdq1ir5b9TEjSUXY3BPrn//vUsca9fueg2fX7XKJZLI5NGpk2v/OPJIOPdcNx+aDj64/lzOUlVKK0vZXLaZTWWb3OvOTbvN77aubBMlpSU1SSPU/1WkZoFmdG7ZmU4tO9GpZSfyDsqjU4tONUkku012zWvnlp2TNhKiSS1LLqZRqq6GzZtdg/imTe5140Z3ySpa8li/3m0TqUULd1dW166uQf388/dMHq1bJ/a9hJLCtoptbC3fyrZy97q1fOseZTXLFbvqhCeOymBlncdq3aw17TPbk5WZRVZmFj/o+ANO7HFiTeIITyKdWroE0iqjld1dZfZgycXUS5WVsG1b9CmULOp63bKl9n1nZLhk0a0b5OTAcce5+dAUWtetm0sce/verApWsbNyJzurdkZ9La0sZWfVTnZU7GB7xXZ2VO5gR8WO3V/D5rdXbN9jffhdULUJSIC2zdvSpnkb99qsDVmZWfTO6k1WZlZN0mjfon3U5azMLGsA3x+q7j+Tqir3ixuaIpdjLauo2L/l8NfIKVp5eFlBAZxzTlw/lkb7myQiw4AngADwrKo+mOKQGhVVd3motNR1LRL+ureyHTvcsxq1JY9t29yoh3uTkaG0b6+0zQrSLquKth2r6X5oJa3bVtCybQWt2pbTok0ZLdrsJLNNKRmtdtAiayvprbZRXl1GeVU5ZVVllFeXU15VzrKqMr6sLqespIzy9eWULXB1yqtdvbKqMpcoIhJItMbovRGEVs1a0SqjFa2bta6Zb9WsFZ1bdt617MvaNm9bkzDCE0h4WWZ6ZmLOIFTddcPqajeFz+/vVFUVW3loOfw1Wlm0OpFTXesip9CXfqzLyZKW5rpZyMhwU+R85NSmzZ5l0eomoHO5RplcRCQA/BU4GygC5orIFFVdktrI9hQM1v77XVEZrJmqqrRmvrJSqagKUl4RpKJCqahQyiuDVFQEKS+HikqloiJIRaVSXgGVFUpFpSuvrICKSl9W7r7EK8qhokIoLxMqKoSK8jQqK4TKijQqK9KoqAhQWRGgqjKNqooAVZUBKiv277q5pFUTaF5GevMdBJqXkpa5g7Tm25HmO5AO25HsbbRqto2WzbeiGVsJNttKsNkWgs22UJWxhepmm6nO/B5abKQyo5T1AuvrOuB2PxXXERNCc0knkwz/mr5rmQDNJZ0WGqADGbSgGS1oRQvSaaGuvKX4+WCAFuqnoJ80nRbBNFoGA7SqTqNVdYBW1QEyg4IEw760g8GIqRqqN0GwZFdZ+Bd7ZFlt85HJoK6yutY3BOnpbgoE3BdoaD5UvrcpM3P3bdPTa5+PthwqC02Ry7GWhSeMyOUG1F11o0wuwECgUFW/BRCRCcBIIO7JZciZ/8uHn5+ABgOgaagG3DxpviyAagCizKN7e4grzU9xllYBgUoIlEN6ecRr2e5lzcqhpS+PrJdR6qedSHopgcBOAoFSAoFS0gM7SQ+Ukp62k4xAKRlppWSk7SRDqkgPQkYQMqpjeK2EjLLdy5tXQbPqfZ8ygpBZ5abmoddqyKhWhEqg7vaI2D7btF2TyO7zgYCbwuuEprrKQ9tG1gvNp6dH30/kNuHHr62stvWRU13rwuuEvuDDp2hl0daFJ4fwJBFtXQP60m0qGmty6Q6sClsuAgZFVhKR0cBogJ77OcxeTlelS8dlpKUFEQmSJkHS0qrD5v2rVBMI1UkLkibqy4OkB6oI+HrpaUECaUECadUE0qpJT/NlEiSQpgTSqslICxIIBEkXJSO9moy0ajICQZoFgjQLKBkBt9zcl2UElObpbjkjDQKBAAHSCEga6RIgIG7ZzaeRnpZOQNIISKCmbNd8aDmTjEAb0iVAelo6aWmBXV+mInXPhy/v7XVvdWItC+0r9EUUXjfacm3JIVq98DrGGKDxJpeYqOo4YBxAXl6e7s8+xr96Q1xjMsaYxqCxnkuuBnqELef4MmOMMUnQWJPLXCBXRHqLSDPgSmBKimMyxpgmo1FeFlPVKhEZA0zH3Yr8vKouTnFYxhjTZDTK5AKgqlOBqamOwxhjmqLGelnMGGNMCllyMcYYE3eWXIwxxsSdJRdjjDFxJ6r79exgoyMiG4CV+7l5J+D7OIYTLxbXvrG49o3FtW/qa1xwYLEdrKqdIwstucSBiMxT1bxUxxHJ4to3Fte+sbj2TX2NCxITm10WM8YYE3eWXIwxxsSdJZf4GJfqAGphce0bi2vfWFz7pr7GBQmIzdpcjDHGxJ2duRhjjIk7Sy7GGGPizpLLPhCRYSLytYgUisjYKOubi8hrfv0cEemVhJh6iMgsEVkiIotF5LYodU4XkS0istBPv0t0XP64K0RkkT/mvCjrRUSe9J/XFyJybBJiOjzsc1goIltF5PaIOkn5vETkeRFZLyJfhpV1EJEZIrLMv7avZdt8X2eZiOQnIa4/ichX/uf0pohk1bJtnT/zBMR1j4isDvtZjahl2zr/dhMQ12thMa0QkYW1bJvIzyvqd0PSfsdU1aYYJlzX/cuBQ4BmwOdA34g6PwX+5uevBF5LQlzZwLF+vg3wTZS4TgcKUvCZrQA61bF+BDANEGAwMCcFP9O1uIfAkv55AacCxwJfhpU9DIz182OBh6Js1wH41r+29/PtExzXUCDdzz8ULa5YfuYJiOse4Jcx/Jzr/NuNd1wR6x8BfpeCzyvqd0OyfsfszCV2A4FCVf1WVSuACcDIiDojgfF+fiIwRCSxA6urarGqLvDz24ClQPdEHjOORgIvqjMbyBKR7CQefwiwXFX3t2eGA6KqHwAbI4rDf4fGAxdG2fQcYIaqblTVTcAMYFgi41LVd1S1yi/Oxo3umlS1fF6xiOVvNyFx+b//y4FX43W8WNXx3ZCU3zFLLrHrDqwKWy5izy/xmjr+D3EL0DEp0QH+MtwAYE6U1SeIyOciMk1E+iUpJAXeEZH5IjI6yvpYPtNEupLa/+hT8XkBdFXVYj+/FugapU6qP7cbcGec0eztZ54IY/zluudrucSTys/rFGCdqi6rZX1SPq+I74ak/I5ZcmkkRKQ18AZwu6pujVi9AHfp5xjgz8A/kxTWyap6LDAcuFlETk3ScfdK3PDXFwD/F2V1qj6v3ai7PlGvnhUQkd8AVcArtVRJ9s/8aeBQoD9QjLsEVZ9cRd1nLQn/vOr6bkjk75gll9itBnqELef4sqh1RCQdaAeUJDowEcnA/fK8oqqTIter6lZV3e7npwIZItIp0XGp6mr/uh54E3d5Ilwsn2miDAcWqOq6yBWp+ry8daFLg/51fZQ6KfncROQ64Dzgh/5LaQ8x/MzjSlXXqWq1qgaBv9dyvFR9XunAxcBrtdVJ9OdVy3dDUn7HLLnEbi6QKyK9/X+9VwJTIupMAUJ3VVwKvFfbH2G8+Gu6zwFLVfXRWup0C7X9iMhA3M89oUlPRFqJSJvQPK5B+MuIalOAa8UZDGwJO11PtFr/o0zF5xUm/HcoH5gcpc50YKiItPeXgYb6soQRkWHAr4ALVLW0ljqx/MzjHVd4G91FtRwvlr/dRDgL+EpVi6KtTPTnVcd3Q3J+xxJxl0JjnXB3N32Du/PkN77sPtwfHEAm7jJLIfApcEgSYjoZd1r7BbDQTyOAHwM/9nXGAItxd8nMBk5MQlyH+ON97o8d+rzC4xLgr/7zXATkJenn2AqXLNqFlSX988Ilt2KgEndNexSujW4msAx4F+jg6+YBz4Zte4P/PSsErk9CXIW4a/Ch37HQXZEHAVPr+pknOK6X/O/OF7gvzezIuPzyHn+7iYzLl78Q+p0Kq5vMz6u274ak/I5Z9y/GGGPizi6LGWOMiTtLLsYYY+LOkosxxpi4s+RijDEm7iy5GGOMiTtLLsYYY+LOkosxDZyIBFIdgzGR7DkXY5JIRO4DNqrq4375D7juN5rhes9tDrypqnf79f/EdcORCTyhquN8+XbgGdxT4DfjumW5ANfv1zuq+svkvStj9mTJxZgk8r3TTlLVY0UkDfeU9K9x3f/fhOu1YArwsKp+ICIdVHWjiLTAdWNymqqWiIgCV6jq6yLSEfgYOEJVVUSyVHVzCt6eMTXSUx2AMU2Jqq4QkRIRGYDr6vwz4Hhc302f+WqtgVzgA+BWEbnIl/fw5SVANa5DQnBDO5QBz4lIAVCQjPdiTF0suRiTfM8C1wHdgOdxZy1/VNVnwiuJyOm4y14nqGqpiLyPuzwGUKaq1eDGDvIdbA7BdZg6Bjgz4e/CmDpYcjEm+d7EdXiaAVyNayf5vYi8oqrbRaQ7rhPEdsAmn1iOwA0FvQc/XkdLVZ0qIh/hhqQ1JqUsuRiTZKpaISKzgM3+7OMdEekDfOJ7+t8O/Aj4F/BjEVkKfI3roTmaNsBkEcnEtdn8PNHvwZi9sQZ9Y5LMN+QvAC7T2oe/NaZBs+dcjEkiEemLGx9jpiUW05jZmYsxxpi4szMXY4wxcWfJxRhjTNxZcjHGGBN3llyMMcbEnSUXY4wxcff/A91HQW1ktBufAAAAAElFTkSuQmCC
 "
 >
 </div>
+ 
+         </div>
 
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
+<div class="output_html rendered_html output_subarea output_execute_result">
 <script>$("div.input").hide()</script>
 </div>
-
-</div>
+ 
+         </div>
 
 </div>
 </div>
@@ -13490,7 +13623,7 @@ He who understands it, earns it; he who doesn’t, pays it.</em></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -13543,32 +13676,32 @@ He who understands it, earns it; he who doesn’t, pays it.</em></p>
 <div class="output">
 
 
-<div class="output_area">
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
 
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
+<div class="output_png output_subarea output_execute_result">
 <img src="data:image/png;base64,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
 "
 >
 </div>
+ 
+         </div>
 
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    
+        
+<div class="output_html rendered_html output_subarea output_execute_result">
 <script>$("div.input").hide()</script>
 </div>
-
-</div>
+ 
+         </div>
 
 </div>
 </div>
@@ -13681,15 +13814,55 @@ He who understands it, earns it; he who doesn’t, pays it.</em></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Buying-and-Selling">Buying and Selling<a class="anchor-link" href="#Buying-and-Selling">&#182;</a></h2><blockquote><p><em>You've got to know when to hold 'em
+<hr>
+<h1 id="Buying-and-Selling">Buying and Selling<a class="anchor-link" href="#Buying-and-Selling">&#182;</a></h1><blockquote><p><em>You've got to know when to hold 'em
 Know when to fold 'em
 Know when to walk away
 And know when to run</em>
 <br><br>– Kenny Rogers, (The Gambler)</p>
 </blockquote>
 <hr>
-<h3 id="The-problem-of-timing-the-market">The problem of timing the market<a class="anchor-link" href="#The-problem-of-timing-the-market">&#182;</a></h3><p>Missing even a few of the best performing days can remove most or all of your gains.</p>
-<h4 id="\$10k-Investment-S&amp;P-500-from-2000-2020">\$10k Investment S&amp;P 500 from 2000-2020<a class="anchor-link" href="#\$10k-Investment-S&amp;P-500-from-2000-2020">&#182;</a></h4><table>
+<h2 id="Automated-strategies-for-Buying">Automated strategies for Buying<a class="anchor-link" href="#Automated-strategies-for-Buying">&#182;</a></h2><h3 id="Lump-Sum-Investing">Lump Sum Investing<a class="anchor-link" href="#Lump-Sum-Investing">&#182;</a></h3><blockquote><p>The best time to buy Bitcoin was 5 years ago. The second best time is now.</p>
+</blockquote>
+<p>With lump sum investing, you invest a large sum and never sell, with the goal of maximizing time in the market.
+Lump sum also involves timing the market. Effective lump sum investing requires timing the market. Since crypto prices regularly crash 30% or more, you don't want to go all-in when prices are near an all-time high.</p>
+<h3 id="Dollar-Cost-Averaging-(DCA)">Dollar Cost Averaging (DCA)<a class="anchor-link" href="#Dollar-Cost-Averaging-(DCA)">&#182;</a></h3><p>With dollar cost averaging, you purchase at a regular interval, e.g. weekly, monthly.
+This can be an extremely effective strategy, especially for new investors or those with limited time or capital.
+If you are new to investing, or have been losing money trading, strongly consider this strategy.</p>
+<p>Advantages of dollar cost averaging</p>
+<ul>
+<li>don't need to time the market</li>
+<li>very little time required</li>
+<li>limits risk </li>
+<li>trains to "buy the dip" instead of panic sell</li>
+<li>uses volatility to lower cost basis </li>
+</ul>
+<p>Dollar cost averaging may even outperform a lump sum if the lump sum was bought near a new all time high, as in the December 2017 example below.</p>
+<p><img src="lump-sum.png" width="80%" height="80%" /></p>
+<p>Source: <a href="https://www.coinbase.com/learn/tips-and-tutorials/dollar-cost-averaging">https://www.coinbase.com/learn/tips-and-tutorials/dollar-cost-averaging</a></p>
+<p>TODO: table showing linear increase vs volatility for lowering cost basis</p>
+<h2 id="Automated-selling-strategies">Automated selling strategies<a class="anchor-link" href="#Automated-selling-strategies">&#182;</a></h2><h3 id="Initial-investment-/-Profit-ladder">Initial investment / Profit ladder<a class="anchor-link" href="#Initial-investment-/-Profit-ladder">&#182;</a></h3><h3 id="Buy-and-Hold-(Hodl)">Buy and Hold (Hodl)<a class="anchor-link" href="#Buy-and-Hold-(Hodl)">&#182;</a></h3><p><img src="hodl.jpg" width="60%" height="60%" align="right" />
+With buy and hold, you buy but don't sell.
+Over long periods of time, this has proven an extremely effective strategy, especially for coins with long-term utility like Bitcoin or Ethereum. Be extremely careful with this strategy. Many coins which used to be in the top 10 marketcap are now worth close to nothing.</p>
+<p>See video: <a href="https://www.youtube.com/watch?v=b4OT2_CIsHM">Top Crypto 2013 - 2021 | Crypto Market Cap History</a></p>
+<table>
+<thead><tr>
+<th style="text-align:left">Hold Pros</th>
+<th style="text-align:left">Hold Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Potentially massive returns</td>
+<td style="text-align:left">Potential drawdowns over 80%. Some coins never recover or go to $0.</td>
+</tr>
+<tr>
+<td style="text-align:left">No taxes</td>
+</tr>
+</tbody>
+</table>
+<h1 id="Timing-the-Market">Timing the Market<a class="anchor-link" href="#Timing-the-Market">&#182;</a></h1><h2 id="The-problem-of-timing-the-market">The problem of timing the market<a class="anchor-link" href="#The-problem-of-timing-the-market">&#182;</a></h2><p>Missing even a few of the best performing days can remove most or all of your gains.</p>
+<h3 id="\$10k-Investment-S&amp;P-500-from-2000-2020">\$10k Investment S&amp;P 500 from 2000-2020<a class="anchor-link" href="#\$10k-Investment-S&amp;P-500-from-2000-2020">&#182;</a></h3><table>
 <thead><tr>
 <th style="text-align:left">Best days missed</th>
 <th style="text-align:left">Dollar Value</th>
@@ -13737,17 +13910,7 @@ And know when to run</em>
 <blockquote><p>"Beating the stock market is hard. When you're out of the market, you might feel safer, but you risk missing out on huge gains."
 <br><br>— <a href="https://www.fool.com/investing/2020/12/31/missing-just-a-few-of-the-best-stock-market-days-c/">The Motley Fool</a></p>
 </blockquote>
-<h3 id="Strategies-for-buying-and-selling">Strategies for buying and selling<a class="anchor-link" href="#Strategies-for-buying-and-selling">&#182;</a></h3><h4 id="Buy-and-Hold-(Hodl)">Buy and Hold (Hodl)<a class="anchor-link" href="#Buy-and-Hold-(Hodl)">&#182;</a></h4><p>With buy and hold, you buy but never sell Bitcoin.
-Over long periods of time, this has proven an extremely effective strategy since Bitcoin has averaged around 200% returns this past decade.</p>
-<h4 id="Dollar-Cost-Averaging-(DCA)">Dollar Cost Averaging (DCA)<a class="anchor-link" href="#Dollar-Cost-Averaging-(DCA)">&#182;</a></h4><p>With dollar cost averaging, you purchase at a regular interval, e.g. weekly, monthly.
-If you start with limited capital, this can be a very effective strategy for building wealth.</p>
-<h4 id="Lump-Sum-Investing">Lump Sum Investing<a class="anchor-link" href="#Lump-Sum-Investing">&#182;</a></h4><blockquote><p>The best time to buy Bitcoin was 5 years ago. The second best time is now.</p>
-</blockquote>
-<p>With lump sum investing, you invest a large sum and never sell, with the goal of maximizing time in the market.
-Lump sum also involves timing the market. Since prices can crash 50% or more, typically lump sum for crypto is most effective when what you're buying isn't near an all-time high. Dollar cost averaging will outperform lump sum if you are buying near the top, as in the December 2017 example below.</p>
-<p><img src="lump-sum.png" width="80%" height="80%" /></p>
-<p>Source: <a href="https://www.coinbase.com/learn/tips-and-tutorials/dollar-cost-averaging">https://www.coinbase.com/learn/tips-and-tutorials/dollar-cost-averaging</a></p>
-<h4 id="Active-Tradig">Active Tradig<a class="anchor-link" href="#Active-Tradig">&#182;</a></h4><p>In active trading you try to predict when the market will go up or down.
+<h2 id="Counter-trading-human-psychology">Counter-trading human psychology<a class="anchor-link" href="#Counter-trading-human-psychology">&#182;</a></h2><p>In timing the market try to predict when the market will go up or down.
 Most traders fail horribly at this, especially when taxes are taken into account.
 It's easy to say you will buy the dip and sell the pump, but the default of human psychology is to do the exact opposite.</p>
 <blockquote><p>"We think we are wolves, living by the logic of the pack.
@@ -13771,14 +13934,16 @@ It's easy to say you will buy the dip and sell the pump, but the default of huma
 <li>on-chain metrics for when coins are moved from exchanges to wallets or wallets to exchanges</li>
 <li>market cycle indicators</li>
 </ul>
-<h4 id="Technical-Analysis">Technical Analysis<a class="anchor-link" href="#Technical-Analysis">&#182;</a></h4><h5 id="Market-Cycles---Fear-and-Greed">Market Cycles - Fear and Greed<a class="anchor-link" href="#Market-Cycles---Fear-and-Greed">&#182;</a></h5><h5 id="Candlestick-and-chart-patterns">Candlestick and chart patterns<a class="anchor-link" href="#Candlestick-and-chart-patterns">&#182;</a></h5><p>TODO: summary and resources</p>
-<h5 id="Buy-the-blood,-Sell-the-pump">Buy the blood, Sell the pump<a class="anchor-link" href="#Buy-the-blood,-Sell-the-pump">&#182;</a></h5><h4 id="Order-flow-analysis">Order flow analysis<a class="anchor-link" href="#Order-flow-analysis">&#182;</a></h4><p>TODO: summary and links</p>
-<h4 id="Market-cycle-indicators">Market cycle indicators<a class="anchor-link" href="#Market-cycle-indicators">&#182;</a></h4><h5 id="Logarithmic-Regression---BTC/ETH-rainbow-chart">Logarithmic Regression - BTC/ETH rainbow chart<a class="anchor-link" href="#Logarithmic-Regression---BTC/ETH-rainbow-chart">&#182;</a></h5><p>In this strategy, you buy when the price of Bitcoin or Ethereum is significantly below it's logarithmic regression trend (blue/green) and you sell when it's significantly above (orange/red). This strategy can be combined with either lump sum or weighted dollar cost averaging, where the amount you buy increases as the price is "cheap" on the regression model.</p>
+<h3 id="Technical-Analysis">Technical Analysis<a class="anchor-link" href="#Technical-Analysis">&#182;</a></h3><h4 id="Market-Cycles--">Market Cycles -<a class="anchor-link" href="#Market-Cycles--">&#182;</a></h4><p>TODO: market cycle emotion chart</p>
+<h4 id="Fear-and-Greed-Index">Fear and Greed Index<a class="anchor-link" href="#Fear-and-Greed-Index">&#182;</a></h4><p><a href="https://alternative.me/crypto/fear-and-greed-index/">https://alternative.me/crypto/fear-and-greed-index/</a></p>
+<h4 id="Candlestick-and-chart-patterns">Candlestick and chart patterns<a class="anchor-link" href="#Candlestick-and-chart-patterns">&#182;</a></h4><p>TODO: summary and resources</p>
+<h4 id="Buy-the-blood,-Sell-the-pump">Buy the blood, Sell the pump<a class="anchor-link" href="#Buy-the-blood,-Sell-the-pump">&#182;</a></h4><h3 id="Order-flow-analysis">Order flow analysis<a class="anchor-link" href="#Order-flow-analysis">&#182;</a></h3><p>TODO: summary and links</p>
+<h3 id="Market-cycle-indicators">Market cycle indicators<a class="anchor-link" href="#Market-cycle-indicators">&#182;</a></h3><h4 id="Logarithmic-Regression---BTC/ETH-rainbow-chart">Logarithmic Regression - BTC/ETH rainbow chart<a class="anchor-link" href="#Logarithmic-Regression---BTC/ETH-rainbow-chart">&#182;</a></h4><p>In this strategy, you buy when the price of Bitcoin or Ethereum is significantly below it's logarithmic regression trend (blue/green) and you sell when it's significantly above (orange/red). This strategy can be combined with either lump sum or weighted dollar cost averaging, where the amount you buy increases as the price is "cheap" on the regression model.</p>
 <p>There is no guarantee this regression model will hold in the future.</p>
 <p><img src="bitcoin-rainbow.png" width="90%" height="90%" /></p>
 <p>Source: <a href="https://www.blockchaincenter.net/bitcoin-rainbow-chart/">https://www.blockchaincenter.net/bitcoin-rainbow-chart/</a></p>
 <p>See also: <a href="https://www.blockchaincenter.net/ethereum-rainbow-chart/">https://www.blockchaincenter.net/ethereum-rainbow-chart/</a></p>
-<h5 id="Pi-Cycle-Top-Indicator">Pi Cycle Top Indicator<a class="anchor-link" href="#Pi-Cycle-Top-Indicator">&#182;</a></h5><p>In this strategy, you wait for the value of the 350 daily moving average x2 (orange line) to pass the 111 daily moving averagee (green line) as a sell signal. This indicator has often timed market tops to within a few days.</p>
+<h4 id="Pi-Cycle-Top-Indicator">Pi Cycle Top Indicator<a class="anchor-link" href="#Pi-Cycle-Top-Indicator">&#182;</a></h4><p>In this strategy, you wait for the value of the 350 daily moving average x2 (orange line) to pass the 111 daily moving averagee (green line) as a sell signal. This indicator has often timed market tops to within a few days.</p>
 <p><img src="pi-cycle.png" width="90%" height="90%" /></p>
 <p><a href="https://www.lookintobitcoin.com/charts/pi-cycle-top-indicator/">https://www.lookintobitcoin.com/charts/pi-cycle-top-indicator/</a></p>
 
@@ -13788,7 +13953,8 @@ It's easy to say you will buy the dip and sell the pump, but the default of huma
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Decentralized-Finance">Decentralized Finance<a class="anchor-link" href="#Decentralized-Finance">&#182;</a></h3><h4 id="Liquidity---the-most-valuable-part-of-any-market">Liquidity - the most valuable part of any market<a class="anchor-link" href="#Liquidity---the-most-valuable-part-of-any-market">&#182;</a></h4><h4 id="Order-Book">Order Book<a class="anchor-link" href="#Order-Book">&#182;</a></h4><h4 id="AMM-Dex">AMM Dex<a class="anchor-link" href="#AMM-Dex">&#182;</a></h4><h4 id="Liquidity-Pool">Liquidity Pool<a class="anchor-link" href="#Liquidity-Pool">&#182;</a></h4><h4 id="Sky-high-APR-lies-and-inflation">Sky-high APR lies and inflation<a class="anchor-link" href="#Sky-high-APR-lies-and-inflation">&#182;</a></h4><h4 id="Auto-compounding">Auto-compounding<a class="anchor-link" href="#Auto-compounding">&#182;</a></h4><h5 id="Mitigate-inflation-risk">Mitigate inflation risk<a class="anchor-link" href="#Mitigate-inflation-risk">&#182;</a></h5><h5 id="Multi-sig-and-exploit-risk">Multi-sig and exploit risk<a class="anchor-link" href="#Multi-sig-and-exploit-risk">&#182;</a></h5><h4 id="Impermanent-Loss">Impermanent Loss<a class="anchor-link" href="#Impermanent-Loss">&#182;</a></h4>
+<hr>
+<h1 id="Risks">Risks<a class="anchor-link" href="#Risks">&#182;</a></h1><h2 id="Volatility">Volatility<a class="anchor-link" href="#Volatility">&#182;</a></h2><h2 id="Bad-Actors">Bad Actors<a class="anchor-link" href="#Bad-Actors">&#182;</a></h2><h2 id="Rug-Pulls">Rug Pulls<a class="anchor-link" href="#Rug-Pulls">&#182;</a></h2><h2 id="Security-audits-and-their-limits">Security audits and their limits<a class="anchor-link" href="#Security-audits-and-their-limits">&#182;</a></h2><h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks">&#182;</a></h2><h2 id="Compromised-Seed-Phrase">Compromised Seed Phrase<a class="anchor-link" href="#Compromised-Seed-Phrase">&#182;</a></h2><h2 id="Pump-and-Dump">Pump and Dump<a class="anchor-link" href="#Pump-and-Dump">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13796,9 +13962,7 @@ It's easy to say you will buy the dip and sell the pump, but the default of huma
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="Risks-and-Risk-Management">Risks and Risk Management<a class="anchor-link" href="#Risks-and-Risk-Management">&#182;</a></h3><p>TODO; quote right about a few things bet big buffet/munger</p>
-<h4 id="Volatility">Volatility<a class="anchor-link" href="#Volatility">&#182;</a></h4><h5 id="Scaling-in-and-scaling-out-of-a-position">Scaling in and scaling out of a position<a class="anchor-link" href="#Scaling-in-and-scaling-out-of-a-position">&#182;</a></h5><h5 id="Stop-losses---pros-and-cons">Stop losses - pros and cons<a class="anchor-link" href="#Stop-losses---pros-and-cons">&#182;</a></h5><h6 id="Riding-up-with-stop-losses">Riding up with stop losses<a class="anchor-link" href="#Riding-up-with-stop-losses">&#182;</a></h6><h4 id="Portfolio-Allocation">Portfolio Allocation<a class="anchor-link" href="#Portfolio-Allocation">&#182;</a></h4><h4 id="-"> <a class="anchor-link" href="#-">&#182;</a></h4><h5 id="Underdiverification----more-volatility">Underdiverification -- more volatility<a class="anchor-link" href="#Underdiverification----more-volatility">&#182;</a></h5><h5 id="Overdiversification----average-results">Overdiversification -- average results<a class="anchor-link" href="#Overdiversification----average-results">&#182;</a></h5><h5 id="75%/25%-porfolio---The-Simple-Path-to-Wealth">75%/25% porfolio - The Simple Path to Wealth<a class="anchor-link" href="#75%/25%-porfolio---The-Simple-Path-to-Wealth">&#182;</a></h5><h5 id="90%/10%---Barbell-portfolio,-conservative-with-upside">90%/10% - Barbell portfolio, conservative with upside<a class="anchor-link" href="#90%/10%---Barbell-portfolio,-conservative-with-upside">&#182;</a></h5><h4 id="Risk-Adjusted-Return">Risk Adjusted Return<a class="anchor-link" href="#Risk-Adjusted-Return">&#182;</a></h4><p>TODO: formula</p>
-<h4 id="Bad-Actors">Bad Actors<a class="anchor-link" href="#Bad-Actors">&#182;</a></h4><h5 id="Rug-Pulls">Rug Pulls<a class="anchor-link" href="#Rug-Pulls">&#182;</a></h5><h5 id="Security-audits-and-their-limits">Security audits and their limits<a class="anchor-link" href="#Security-audits-and-their-limits">&#182;</a></h5><h5 id="Hacks">Hacks<a class="anchor-link" href="#Hacks">&#182;</a></h5><h5 id="Compromised-Seed-Phrase">Compromised Seed Phrase<a class="anchor-link" href="#Compromised-Seed-Phrase">&#182;</a></h5><h6 id="The-importance-of-hardware-wallets">The importance of hardware wallets<a class="anchor-link" href="#The-importance-of-hardware-wallets">&#182;</a></h6><h5 id="Pump-and-Dump">Pump and Dump<a class="anchor-link" href="#Pump-and-Dump">&#182;</a></h5>
+<h1 id="Risk-Management">Risk Management<a class="anchor-link" href="#Risk-Management">&#182;</a></h1><h2 id="Not-your-keys-not-your-coins">Not your keys not your coins<a class="anchor-link" href="#Not-your-keys-not-your-coins">&#182;</a></h2><h2 id="The-importance-of-hardware-wallets">The importance of hardware wallets<a class="anchor-link" href="#The-importance-of-hardware-wallets">&#182;</a></h2><h2 id="Scaling-in-and-scaling-out-of-a-position">Scaling in and scaling out of a position<a class="anchor-link" href="#Scaling-in-and-scaling-out-of-a-position">&#182;</a></h2><h2 id="Stop-losses---pros-and-cons">Stop losses - pros and cons<a class="anchor-link" href="#Stop-losses---pros-and-cons">&#182;</a></h2><h3 id="Riding-up-with-stop-losses">Riding up with stop losses<a class="anchor-link" href="#Riding-up-with-stop-losses">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13806,11 +13970,20 @@ It's easy to say you will buy the dip and sell the pump, but the default of huma
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="Taxes">Taxes<a class="anchor-link" href="#Taxes">&#182;</a></h3><p>Disclaimer: None of the following should be interpreted as professional advice. The following information is related to US taxes. Consult a tax professional licensed for your country/region for any tax questions.</p>
-<h4 id="Taxable-events">Taxable events<a class="anchor-link" href="#Taxable-events">&#182;</a></h4><h5 id="Crypto-classification-by-IRS">Crypto classification by IRS<a class="anchor-link" href="#Crypto-classification-by-IRS">&#182;</a></h5><p>TODO: definitions
+<h1 id="Portfolio-Allocation">Portfolio Allocation<a class="anchor-link" href="#Portfolio-Allocation">&#182;</a></h1><h2 id="Underdiverification----more-volatility">Underdiverification -- more volatility<a class="anchor-link" href="#Underdiverification----more-volatility">&#182;</a></h2><h2 id="Overdiversification----average-results">Overdiversification -- average results<a class="anchor-link" href="#Overdiversification----average-results">&#182;</a></h2><h2 id="75%/25%-porfolio---The-Simple-Path-to-Wealth">75%/25% porfolio - The Simple Path to Wealth<a class="anchor-link" href="#75%/25%-porfolio---The-Simple-Path-to-Wealth">&#182;</a></h2><h2 id="90%/10%---Barbell-portfolio,-conservative-with-upside">90%/10% - Barbell portfolio, conservative with upside<a class="anchor-link" href="#90%/10%---Barbell-portfolio,-conservative-with-upside">&#182;</a></h2><h2 id="Risk-Adjusted-Return">Risk Adjusted Return<a class="anchor-link" href="#Risk-Adjusted-Return">&#182;</a></h2><p>TODO: formula</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h1 id="Taxes">Taxes<a class="anchor-link" href="#Taxes">&#182;</a></h1><p>Disclaimer: None of the following should be interpreted as professional advice. The following information is related to US taxes. Consult a tax professional licensed for your country/region for any tax questions.</p>
+<h2 id="Taxable-events">Taxable events<a class="anchor-link" href="#Taxable-events">&#182;</a></h2><h2 id="Crypto-classification-by-IRS">Crypto classification by IRS<a class="anchor-link" href="#Crypto-classification-by-IRS">&#182;</a></h2><p>TODO: definitions
 TODO: IRS resources clarifying property and taxable events</p>
-<h5 id="Tracking-taxes">Tracking taxes<a class="anchor-link" href="#Tracking-taxes">&#182;</a></h5><p>TODO: list of services for tracking crypto taxes</p>
-<h4 id="Strategies-for-minimizing-taxes">Strategies for minimizing taxes<a class="anchor-link" href="#Strategies-for-minimizing-taxes">&#182;</a></h4><h5 id="Buy-and-Hold">Buy and Hold<a class="anchor-link" href="#Buy-and-Hold">&#182;</a></h5><h5 id="Wash-sales-and-tax-loss-harvesting">Wash sales and tax loss harvesting<a class="anchor-link" href="#Wash-sales-and-tax-loss-harvesting">&#182;</a></h5><h5 id="Loans">Loans<a class="anchor-link" href="#Loans">&#182;</a></h5><h5 id="Wrapped-inflationary-assets">Wrapped inflationary assets<a class="anchor-link" href="#Wrapped-inflationary-assets">&#182;</a></h5>
+<h2 id="Tracking-taxes">Tracking taxes<a class="anchor-link" href="#Tracking-taxes">&#182;</a></h2><p>TODO: list of services for tracking crypto taxes</p>
+<h2 id="Strategies-for-minimizing-taxes">Strategies for minimizing taxes<a class="anchor-link" href="#Strategies-for-minimizing-taxes">&#182;</a></h2><h3 id="Buy-and-Hold">Buy and Hold<a class="anchor-link" href="#Buy-and-Hold">&#182;</a></h3><h3 id="Wash-sales-and-tax-loss-harvesting">Wash sales and tax loss harvesting<a class="anchor-link" href="#Wash-sales-and-tax-loss-harvesting">&#182;</a></h3><h3 id="Loans">Loans<a class="anchor-link" href="#Loans">&#182;</a></h3><h3 id="Wrapped-inflationary-assets">Wrapped inflationary assets<a class="anchor-link" href="#Wrapped-inflationary-assets">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13826,25 +13999,37 @@ TODO: IRS resources clarifying property and taxable events</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="Additional-Resources">Additional Resources<a class="anchor-link" href="#Additional-Resources">&#182;</a></h3><h4 id="DYOR---Fundamental-Analysis-and-Tokenomics">DYOR - Fundamental Analysis and Tokenomics<a class="anchor-link" href="#DYOR---Fundamental-Analysis-and-Tokenomics">&#182;</a></h4><p><a href="https://www.youtube.com/channel/UCqK_GSMbpiV8spgD3ZGloSw">Coin Bureau - Youtube</a></p>
-<h4 id="Technical-Analysis,-Trading-and-Risk-Managmeent">Technical Analysis, Trading and Risk Managmeent<a class="anchor-link" href="#Technical-Analysis,-Trading-and-Risk-Managmeent">&#182;</a></h4><p><a href="https://drive.google.com/file/d/1W-9XUcTRc1Zerwi6D-ZYTVzRrVbXoVbG/view">Emperor BTC Trading Manual - PDF</a></p>
-
+<h1 id="Defi">Defi<a class="anchor-link" href="#Defi">&#182;</a></h1><h2 id="Liquidity---the-most-valuable-part-of-any-market">Liquidity - the most valuable part of any market<a class="anchor-link" href="#Liquidity---the-most-valuable-part-of-any-market">&#182;</a></h2><h2 id="Order-Book">Order Book<a class="anchor-link" href="#Order-Book">&#182;</a></h2><h2 id="AMM-Dex">AMM Dex<a class="anchor-link" href="#AMM-Dex">&#182;</a></h2><h2 id="Liquidity-Pool">Liquidity Pool<a class="anchor-link" href="#Liquidity-Pool">&#182;</a></h2><h2 id="Sky-high-APR-lies-and-inflation">Sky-high APR lies and inflation<a class="anchor-link" href="#Sky-high-APR-lies-and-inflation">&#182;</a></h2><h2 id="Auto-compounding">Auto-compounding<a class="anchor-link" href="#Auto-compounding">&#182;</a></h2><h3 id="Mitigate-inflation-risk">Mitigate inflation risk<a class="anchor-link" href="#Mitigate-inflation-risk">&#182;</a></h3><h5 id="Multi-sig-and-exploit-risk">Multi-sig and exploit risk<a class="anchor-link" href="#Multi-sig-and-exploit-risk">&#182;</a></h5><h4 id="Impermanent-Loss">Impermanent Loss<a class="anchor-link" href="#Impermanent-Loss">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Recommended-Reading">Recommended Reading<a class="anchor-link" href="#Recommended-Reading">&#182;</a></h2><ul>
+<hr>
+<h1 id="Recommended-Resources">Recommended Resources<a class="anchor-link" href="#Recommended-Resources">&#182;</a></h1><h2 id="Videos">Videos<a class="anchor-link" href="#Videos">&#182;</a></h2><h3 id="DYOR---Fundamental-Analysis-and-Tokenomics">DYOR - Fundamental Analysis and Tokenomics<a class="anchor-link" href="#DYOR---Fundamental-Analysis-and-Tokenomics">&#182;</a></h3><ul>
+<li><a href="https://www.youtube.com/channel/UCqK_GSMbpiV8spgD3ZGloSw">Coin Bureau - Youtube</a></li>
+</ul>
+<h2 id="Books">Books<a class="anchor-link" href="#Books">&#182;</a></h2><h3 id="Trading">Trading<a class="anchor-link" href="#Trading">&#182;</a></h3><ul>
+<li><p><a href="https://drive.google.com/file/d/1W-9XUcTRc1Zerwi6D-ZYTVzRrVbXoVbG/view">Emperor BTC Trading Manual - PDF</a></p>
+</li>
 <li><p>Reminiscences of a Stock Operator
 — Edwin Lefèvre</p>
 </li>
-<li><p>Poor Charlie' Almanack
-— Charlie Munger</p>
-</li>
-<li><p>The Simple Path to Wealth
-— J L Collins</p>
-</li>
+</ul>
+<h3 id="Portfolio-Allocation">Portfolio Allocation<a class="anchor-link" href="#Portfolio-Allocation">&#182;</a></h3><ul>
+<li>The Simple Path to Wealth
+— J L Collins </li>
+</ul>
+<h3 id="Mental-Models-&amp;-Cognitive-Biases">Mental Models &amp; Cognitive Biases<a class="anchor-link" href="#Mental-Models-&amp;-Cognitive-Biases">&#182;</a></h3><ul>
+<li>Poor Charlie' Almanack
+— Charlie Munger</li>
+</ul>
+<h3 id="Recommended-Twitter-Follows">Recommended Twitter Follows<a class="anchor-link" href="#Recommended-Twitter-Follows">&#182;</a></h3><h4 id="market-indicators-and-sentiment">market indicators and sentiment<a class="anchor-link" href="#market-indicators-and-sentiment">&#182;</a></h4><ul>
+<li><a href="https://twitter.com/tedtalksmacro">https://twitter.com/tedtalksmacro</a></li>
+</ul>
+<h4 id="Fundamental-Analysis">Fundamental Analysis<a class="anchor-link" href="#Fundamental-Analysis">&#182;</a></h4><ul>
+<li><a href="https://twitter.com/Beastlyorion">https://twitter.com/Beastlyorion</a></li>
 </ul>
 
 </div>
@@ -13855,13 +14040,7 @@ TODO: IRS resources clarifying property and taxable events</p>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Recommended Twitter Follows</span>
-
-<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">twitter</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">tedtalksmacro</span>
-<span class="o">*</span> <span class="n">market</span> <span class="n">indicators</span> <span class="ow">and</span> <span class="n">sentiment</span>
-
-<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">twitter</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">Beastlyorion</span>
-<span class="o">*</span> <span class="n">fundamental</span> <span class="n">analysis</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
